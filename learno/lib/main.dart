@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learno/vistas/inicialScreen.dart';
+import 'enrutador/rute.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: inicialScreen(),
+      initialRoute: MyEnrouter.rutaInicial,
+      routes: MyEnrouter.rutas,
     );
   }
 }
